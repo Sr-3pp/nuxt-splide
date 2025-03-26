@@ -10,7 +10,7 @@
 ## ✨ Features
 
 - ✅ Auto-installs and registers [@splidejs/vue-splide](https://www.npmjs.com/package/@splidejs/vue-splide)
-- ✅ Auto-imports `<Splide>` and `<SplideSlide>` globally
+- ✅ Auto-imports `<SplideContainer>` and `<SplideSlide>` globally
 - ✅ Built-in support for official Splide themes (`default`, `skyblue`, `sea-green`)
 - ✅ Custom theme support via your own CSS
 - ✅ Runtime variant switching using the `variant` prop
@@ -28,11 +28,11 @@ Then use it immediately:
 
 ```vue
 <template>
-  <Splide :options="{ perPage: 2 }">
+  <SplideContainer :options="{ perPage: 2 }">
     <SplideSlide v-for="n in 4" :key="n">
       Slide {{ n }}
     </SplideSlide>
-  </Splide>
+  </SplideContainer>
 </template>
 ```
 
