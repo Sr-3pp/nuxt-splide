@@ -1,8 +1,9 @@
 {
   "name": "@sr3pp/nuxt-splide",
   "version": "1.0.0",
-  "description": "My new Nuxt module",
-  "repository": "your-org/my-module",
+  "description": "A Nuxt module to plug and play Splide.js",
+  "repository": "sr-3pp/nuxt-splide",
+  "author": "sr.3pp",
   "license": "MIT",
   "type": "module",
   "exports": {
