@@ -21,7 +21,7 @@
 ## 🚀 Quick Start
 
 ```bash
-npx nuxi module add nuxt-splide
+npx nuxi module add @nuxt/splide
 ```
 
 Then use it immediately:
@@ -46,7 +46,7 @@ Add your configuration to `nuxt.config.ts` under the `splide` key. You can defin
 
 ```ts
 export default defineNuxtConfig({
-  modules: ['nuxt-splide'],
+  modules: ['@nuxt/splide'],
   splide: {
     themes: ['default', 'skyblue', 'sea-green', 'sr3pp'], // multiple available themes
     defaultTheme: 'skyblue', // sets the default one
