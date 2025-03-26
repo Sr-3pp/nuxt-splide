@@ -73,6 +73,9 @@ export default defineNuxtConfig({
 - `skyblue`
 - `sea-green`
 
+- `sr3pp` (example)
+- `nuxt` (example)
+
 These load the official [Splide themes](https://splidejs.com/themes/) and apply them globally.
 
 ---
