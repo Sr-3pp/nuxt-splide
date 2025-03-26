@@ -132,7 +132,6 @@ This module uses `exports` for Nuxt-style theme loading:
 
 ```json
 "exports": {
-  ".": "./src/module.ts",
   "./css/sr3pp.css": "./src/css/sr3pp.css"
 }
 ```
