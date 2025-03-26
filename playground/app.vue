@@ -9,11 +9,17 @@ const slides = [
 </script>
 
 <template>
-<SplideContainer>
-  <SplideSlide v-for="slide in slides" :key="slide.src">
-    <img :src="slide.src" alt="">
-  </SplideSlide>
-</SplideContainer>
+  <SplideContainer>
+    <SplideSlide
+      v-for="slide in slides"
+      :key="slide.src"
+    >
+      <img
+        :src="slide.src"
+        alt=""
+      >
+    </SplideSlide>
+  </SplideContainer>
 </template>
 
 <script setup>
