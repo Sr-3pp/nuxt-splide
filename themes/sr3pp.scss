@@ -1,0 +1,70 @@
+@use 'tools' as *;
+
+$arrow-color: #01EFAC;
+$arrow-bg: #524094;
+$arrow-size: unit(30);
+
+$dot-bg: #524094;
+$dot-active: #01CBAE;
+
+
+.splide{
+    display: flex;
+    padding-bottom: unit(24);
+
+    &__track{
+      border-radius: unit(20);
+    }
+    &__arrows{
+        position: relative;
+        display: flex;
+        gap: unit(20);
+        padding: unit(20);
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    &__arrow{
+        transform: inherit;
+        position: static;
+        background: $arrow-bg;
+        border: none;
+        color: $arrow-color;
+        width: auto;
+        height: auto;
+        padding: unit(10);
+        
+        svg{
+            flex-shrink: 0;
+            width: $arrow-size;
+            height: $arrow-size;
+            fill: currentColor;
+        }
+    }
+    
+    &__slide{
+        overflow: hidden;
+        border-radius: unit(24);
+        padding: unit(4);
+        background: conic-gradient(from 3.1416rad at 10% 50%, $dot-bg, $dot-active);
+
+        img{
+            width: 100%;
+            border-radius: unit(22);
+        }
+    }
+
+    &__pagination{
+        width: auto;
+        left: initial;
+        bottom: 0;
+        &__page{
+            background: $dot-bg;
+            border: none;
+        }
+        &__page.is-active{
+            background: $dot-active;
+        }
+    }
+}
+  

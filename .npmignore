@@ -1,0 +1,6 @@
+themes
+scripts
+node_modules
+.github
+.gitignore
+package-lock.json

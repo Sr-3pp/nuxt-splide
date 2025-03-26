@@ -1,0 +1,104 @@
+@use 'tools' as *;
+
+$arrow-bg: #64d98a;
+$arrow-color: #020420;
+$arrow-size: unit(20);
+
+$dot-bg: #020420;
+$dot-active: #64d98a;
+
+
+.splide{
+    display: flex;
+    gap: unit(10);
+    flex-direction: column;
+
+    &__track{
+        order: 1;
+        border-radius: unit(20);
+    }
+    &__arrows{
+        order: 2;
+        position: relative;
+        display: flex;
+        gap: unit(20);
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    &__arrow{
+        transform: inherit;
+        position: absolute;
+        top: 0;
+        background: $arrow-bg;
+        border: none;
+        border-radius: unit(8);
+        color: $arrow-color;
+        width: auto;
+        height: auto;
+        padding: unit(10);
+
+        &--prev{
+            left: 0;
+        }
+        &--next{
+            right: 0;
+        }
+        
+        svg{
+            flex-shrink: 0;
+            width: $arrow-size;
+            height: $arrow-size;
+            fill: currentColor;
+        }
+    }
+    
+    &__slide{
+        overflow: hidden;
+        border-radius: unit(24);
+        padding: unit(4);
+        background: conic-gradient(from 3.1416rad at 10% 50%, $dot-bg, $dot-active);
+
+        img{
+            width: 100%;
+            border-radius: unit(22);
+        }
+    }
+
+    &__pagination{
+        order: 3;
+        position: static;
+        width: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: unit(4);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &__page{
+            background: linear-gradient(45deg, transparent 50%, $dot-bg 50%);
+            border: none;
+            border-top: {
+                width: unit(2);
+                style: solid;
+                color: $arrow-bg;
+            }
+            
+            border-right: {
+                width: unit(2);
+                style: solid;
+                color: $arrow-bg;
+            }
+            transform: rotate(-45deg) scale(.6);
+            width: unit(16);
+            height: unit(16);
+            border-radius: unit(4);
+        }
+        &__page.is-active{
+            transform: rotate(-45deg) scale(.9);
+            background: linear-gradient(45deg, transparent 50%, $dot-active 50%);
+        }
+    }
+}
+  

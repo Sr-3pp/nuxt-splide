@@ -1,0 +1,54 @@
+.splide {
+  display: flex;
+  padding-bottom: 1.5rem;
+}
+.splide__track {
+  border-radius: 1.25rem;
+}
+.splide__arrows {
+  position: relative;
+  display: flex;
+  gap: 1.25rem;
+  padding: 1.25rem;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.splide__arrow {
+  transform: inherit;
+  position: static;
+  background: #524094;
+  border: none;
+  color: #01EFAC;
+  width: auto;
+  height: auto;
+  padding: 0.625rem;
+}
+.splide__arrow svg {
+  flex-shrink: 0;
+  width: 1.875rem;
+  height: 1.875rem;
+  fill: currentColor;
+}
+.splide__slide {
+  overflow: hidden;
+  border-radius: 1.5rem;
+  padding: 0.25rem;
+  background: conic-gradient(from 3.1416rad at 10% 50%, #524094, #01CBAE);
+}
+.splide__slide img {
+  width: 100%;
+  border-radius: 1.375rem;
+}
+.splide__pagination {
+  width: auto;
+  left: initial;
+  bottom: 0;
+}
+.splide__pagination__page {
+  background: #524094;
+  border: none;
+}
+.splide__pagination__page.is-active {
+  background: #01CBAE;
+}
